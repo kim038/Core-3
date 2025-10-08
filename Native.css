@@ -1,8 +1,9 @@
 body {
-    background-color: rgb(238, 236, 228);
+    background-color: rgb(248, 247, 243);
 }
 
 ul {
+    z-index: 2;
     list-style-type: none;
     margin: -8px;
     padding: 0;
@@ -36,84 +37,523 @@ ul li a:hover {
 
 }
 
-.container {
-    height: 100vh;
-    width: 75vw;
-    margin: auto;
-    display: grid;
-    padding-top: 150px;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: auto auto auto auto auto auto auto auto auto auto auto auto auto auto;
-}
+.catbird {
+    margin-left: -8px;
 
-.header {
-    grid-column: 2;
-    grid-row: 1;
-    font-family: "warbler-deck", sans-serif;
-    color: #6c9e99;
-    font-size: 40px;
-    padding-left: 30px;
-    margin-top: auto;
-    margin-bottom: auto;
-}
+    .container {
+        width: 100vw;
+        margin: auto;
+        display: grid;
+        padding-top: 110px;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto auto auto auto auto auto auto auto auto auto auto auto auto auto;
+    }
 
-.profile {
-    grid-column: 1;
-
-    grid-row: 2/5;
-
-    img {
-        width: 100%;
+    .header {
+        grid-column: 2;
+        grid-row: 1;
+        font-family: "museomoderno", sans-serif;
+        font-weight: 700;
+        font-style: normal;
+        color: #6c9e99;
+        font-size: 50px;
+        padding-left: 80px;
         margin-top: auto;
         margin-bottom: auto;
+        padding-top: 125px;
+    }
+
+    .profile {
+        grid-column: 1;
+        grid-row: 1/10;
+        overflow: hidden;
+
+        img {
+            width: 100%;
+            margin-top: auto;
+            margin-bottom: auto;
 
 
+
+        }
+    }
+
+    .description {
+        p {
+            width: 500px;
+            grid-column: 2;
+            grid-row: 2;
+            padding-left: 80px;
+            font-family: "warbler-text", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+            padding-top: 20px;
+        }
+    }
+
+
+
+    .calldescription {
+
+        grid-column: 2;
+        grid-row: 5/7;
+        padding-left: 30px;
+        margin-left: 50px;
+        border-radius: 20px;
+        margin-top: -150px;
+
+        p {
+            font-family: "warbler-text", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+            font-size: 13px;
+            color: #6c9e99;
+            padding-top: 10px;
+            width: 450px;
+        }
+
+        h3 {
+            font-family: "coolvetica", sans-serif;
+            font-weight: 500;
+            font-style: normal;
+            color: #6c9e99;
+            margin-bottom: -10px;
+            margin-top: 50px;
+        }
+    }
+
+    .description {
+        p {
+            width: 500px;
+            grid-column: 2;
+            grid-row: 2;
+            padding-left: 80px;
+            font-family: "warbler-text", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+            padding-top: 20px;
+        }
     }
 }
 
-.description {
-    grid-column: 2;
-    grid-row: 2/6;
-    padding-left: 30px;
-    font-family: "warbler-text", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    padding-top: 20px;
-}
 
-.audioone {
+
+.catbirdone {
+    border-radius: 100px;
+    background-color: #6c9e99;
+    width: 400px;
+    margin-left: 835px;
+    overflow: hidden;
+    margin-top: -200px;
+
+
     video {
         width: 100%;
         height: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
 
     }
-
-    grid-column: 1;
-    grid-row: 5/8;
-    background-color: white;
-    border-radius: 20px;
-    height: 80%;
-
-    margin-top: auto;
-    margin-bottom: auto;
 }
 
-.audiotwo {
-    grid-column: 1;
-    grid-row: 8/11;
-    background-color: white;
-    border-radius: 20px;
-    height: 80%;
-    margin-top: auto;
-    margin-bottom: auto;
+.jay {
+    margin-left: -8px;
+    margin-top: 50px;
+
+    .container {
+        width: 100vw;
+        margin: auto;
+        display: grid;
+        padding-top: 110px;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto auto auto auto auto auto auto auto auto auto auto auto auto auto;
+    }
+
+    .header {
+        grid-column: 1;
+        grid-row: 1;
+        font-family: "museomoderno", sans-serif;
+        font-weight: 700;
+        font-style: normal;
+        color: #6c9e99;
+        font-size: 50px;
+        padding-left: 150px;
+        margin-top: auto;
+        margin-bottom: auto;
+        padding-top: 125px;
+    }
+
+    .profile {
+        grid-column: 2;
+        grid-row: 1/10;
+        overflow: hidden;
+
+        img {
+            width: 100%;
+            margin-top: auto;
+            margin-bottom: auto;
+            transform: scaleX(-1);
+            z-index: 0;
+
+        }
+    }
+
+    .description {
+        p {
+            width: 500px;
+            grid-column: 1;
+            grid-row: 2;
+            padding-left: 150px;
+            font-family: "warbler-text", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+            padding-top: 20px;
+        }
+    }
+
+    .description {
+        p {
+            width: 500px;
+            grid-column: 2;
+            grid-row: 2;
+            padding-left: 150px;
+            font-family: "warbler-text", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+            padding-top: 20px;
+        }
+    }
+
+    .catbirdone {
+        video {
+            width: 50%;
+            height: 100%;
+            margin-left: auto;
+            margin-right: auto;
+
+        }
+
+        grid-column: 2;
+        grid-row: 8/10;
+        background-color: #6c9e99;
+        border-radius: 20px;
+        height: 80%;
+        overflow:hidden;
+        margin-top: auto;
+        margin-bottom: auto;
+    }
+
+
+    .calldescription {
+
+        grid-column: 1;
+        grid-row: 5/7;
+        padding-left: 30px;
+        margin-left: 120px;
+        border-radius: 20px;
+        margin-top: -150px;
+
+        p {
+            font-family: "warbler-text", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+            font-size: 13px;
+            color: #6c9e99;
+            padding-top: 10px;
+            width: 450px;
+        }
+
+        h3 {
+            font-family: "coolvetica", sans-serif;
+            font-weight: 500;
+            font-style: normal;
+            color: #6c9e99;
+            margin-bottom: -10px;
+            margin-top: 50px;
+        }
+    }
 }
 
-.calldescription {
-    grid-column: 2;
-    grid-row: 5/11;
-    padding-left: 30px;
-    font-family: "warbler-text", sans-serif;
-    font-weight: 400;
-    font-style: normal;
+.jayone {
+    border-radius: 100px;
+    background-color: #6c9e99;
+    width: 400px;
+    margin-left: 150px;
+    overflow: hidden;
+    margin-top: -200px;
 
+
+    video {
+        width: 100%;
+        height: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+
+    }
+}
+
+
+
+.cardinal {
+    margin-left: -8px;
+    margin-top: 100px;
+
+    .container {
+        width: 100vw;
+        margin: auto;
+        display: grid;
+        padding-top: 110px;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto auto auto auto auto auto auto auto auto auto auto auto auto auto;
+    }
+
+    .header {
+        grid-column: 2;
+        grid-row: 1;
+        font-family: "museomoderno", sans-serif;
+        font-weight: 700;
+        font-style: normal;
+        color: #6c9e99;
+        font-size: 50px;
+        padding-left: 80px;
+        margin-top: auto;
+        margin-bottom: auto;
+        padding-top: 125px;
+    }
+
+    .profile {
+        grid-column: 1;
+        grid-row: 1/10;
+        overflow: hidden;
+
+        img {
+            width: 100%;
+            margin-top: auto;
+            margin-bottom: auto;
+
+
+
+        }
+    }
+
+    .description {
+        p {
+            width: 500px;
+            grid-column: 2;
+            grid-row: 2;
+            padding-left: 80px;
+            font-family: "warbler-text", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+            padding-top: 20px;
+        }
+    }
+
+
+
+    .calldescription {
+
+        grid-column: 2;
+        grid-row: 5/7;
+        padding-left: 30px;
+        margin-left: 50px;
+        border-radius: 20px;
+        margin-top: -150px;
+
+        p {
+            font-family: "warbler-text", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+            font-size: 13px;
+            color: #6c9e99;
+            padding-top: 10px;
+            width: 450px;
+        }
+
+        h3 {
+            font-family: "coolvetica", sans-serif;
+            font-weight: 500;
+            font-style: normal;
+            color: #6c9e99;
+            margin-bottom: -10px;
+            margin-top: 50px;
+        }
+    }
+
+    .description {
+        p {
+            width: 500px;
+            grid-column: 2;
+            grid-row: 2;
+            padding-left: 80px;
+            font-family: "warbler-text", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+            padding-top: 20px;
+        }
+    }
+}
+
+
+
+.cardinalone {
+    border-radius: 100px;
+    background-color: #6c9e99;
+    width: 400px;
+    margin-left: 835px;
+    overflow: hidden;
+    margin-top: -200px;
+
+
+    video {
+        width: 100%;
+        height: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+
+    }
+}
+
+
+
+
+
+.robin {
+    margin-left: -8px;
+    margin-top: 50px;
+
+    .container {
+        width: 100vw;
+        margin: auto;
+        display: grid;
+        padding-top: 110px;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto auto auto auto auto auto auto auto auto auto auto auto auto auto;
+    }
+
+    .header {
+        grid-column: 1;
+        grid-row: 1;
+        font-family: "museomoderno", sans-serif;
+        font-weight: 700;
+        font-style: normal;
+        color: #6c9e99;
+        font-size: 50px;
+        padding-left: 150px;
+        margin-top: auto;
+        margin-bottom: auto;
+        padding-top: 125px;
+    }
+
+    .profile {
+        grid-column: 2;
+        grid-row: 1/10;
+        overflow: hidden;
+
+        img {
+            width: 100%;
+            margin-top: auto;
+            margin-bottom: auto;
+            transform: scaleX(-1);
+            z-index: 0;
+
+        }
+    }
+
+    .description {
+        p {
+            width: 500px;
+            grid-column: 1;
+            grid-row: 2;
+            padding-left: 150px;
+            font-family: "warbler-text", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+            padding-top: 20px;
+        }
+    }
+
+    .description {
+        p {
+            width: 500px;
+            grid-column: 2;
+            grid-row: 2;
+            padding-left: 150px;
+            font-family: "warbler-text", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+            padding-top: 20px;
+        }
+    }
+
+    .catbirdone {
+        video {
+            width: 50%;
+            height: 100%;
+            margin-left: auto;
+            margin-right: auto;
+
+        }
+
+        grid-column: 2;
+        grid-row: 8/10;
+        background-color: #6c9e99;
+        border-radius: 20px;
+        height: 80%;
+        overflow:hidden;
+        margin-top: auto;
+        margin-bottom: auto;
+    }
+
+
+    .calldescription {
+
+        grid-column: 1;
+        grid-row: 5/7;
+        padding-left: 30px;
+        margin-left: 120px;
+        border-radius: 20px;
+        margin-top: -150px;
+
+        p {
+            font-family: "warbler-text", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+            font-size: 13px;
+            color: #6c9e99;
+            padding-top: 10px;
+            width: 450px;
+        }
+
+        h3 {
+            font-family: "coolvetica", sans-serif;
+            font-weight: 500;
+            font-style: normal;
+            color: #6c9e99;
+            margin-bottom: -10px;
+            margin-top: 50px;
+        }
+    }
+}
+
+.robinone {
+    border-radius: 100px;
+    background-color: #6c9e99;
+    width: 400px;
+    margin-left: 150px;
+    overflow: hidden;
+    margin-top: -200px;
+
+
+    video {
+        width: 100%;
+        height: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+
+    }
 }
