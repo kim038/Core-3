@@ -159,7 +159,7 @@ ul li a:hover {
 
 .jay {
     margin-left: -8px;
-    margin-top: 50px;
+    margin-top: -110px;
 
     .container {
         width: 100vw;
@@ -275,6 +275,67 @@ ul li a:hover {
     }
 }
 
+
+.catbirdphotos {
+    margin-top: 124px;
+    width: 100vw;
+    padding-bottom: 250px;
+    padding-top: 150px;
+    margin-left: -8px;
+    font-size: 25px;
+    background-color: rgb(255, 255, 255);
+
+    h3 {
+        font-family: "coolvetica", sans-serif;
+        font-weight: 500;
+        font-style: normal;
+        color: #6c9e99;
+        text-align: center;
+        margin-bottom: 100px;
+    }
+
+    .container {
+        margin-left: auto;
+        margin-right: auto;
+        width: 75%;
+
+        display: grid;
+        grid-template-columns: repeat (3, 1fr);
+        gap: 20px;
+        grid-template-areas: 'photo1 photo2 photo3'
+    }
+
+    img {
+        width: 100%;
+        max-height: 100%;
+        object-fit: contain;
+        border-radius: 15px;
+
+    }
+
+    .catphoto1 {
+        grid-area: photo1;
+        column-span: 1;
+
+
+
+    }
+
+    .catphoto2 {
+        grid-area: photo2;
+        column-span: 2;
+
+
+
+    }
+
+    .catphoto3 {
+        grid-area: photo3;
+
+    }
+}
+
+
 .jayone {
     border-radius: 100px;
     background-color: #6c9e99;
@@ -298,7 +359,7 @@ ul li a:hover {
 
 .cardinal {
     margin-left: -8px;
-    margin-top: 100px;
+    margin-top: -110px;
 
     .container {
         width: 100vw;
@@ -398,6 +459,7 @@ ul li a:hover {
 
 
 
+
 .cardinalone {
     border-radius: 100px;
     background-color: #6c9e99;
@@ -423,7 +485,7 @@ ul li a:hover {
 
 .robin {
     margin-left: -8px;
-    margin-top: 50px;
+    margin-top: -110px;
 
     .container {
         width: 100vw;
